@@ -5,15 +5,49 @@
             MuseBox
         </title>
 
-    </head>
-    <body>
-        <header>
+        <style>
+            .side-bar {
+                background-color: white;
+                width: 200px;
+                display: inline-block;
+                border-radius: 10px;
+                position: relative;
+                top: 30px;
+                left: 21%;
+            }
 
-        </header>
+            .header {
+                top: 0;
+                position: fixed;
+            }
+
+            .search-bar {
+                font-size: 15px;
+                color: gray;
+            }
+
+        </style>
+    </head>
+    <body style="margin: 0;background-image: url(https://images.pexels.com/photos/3695238/pexels-photo-3695238.jpeg?cs=srgb&dl=pexels-damir-mijailovic-1921088-3695238.jpg&fm=jpg); background-size: 100% 320%;">
+        <div style="background-color: rgb(192, 210, 252); height: 70px; width: 100%;">
+            <header>
+                <nav>
+                    <input class = "search-bar" type="text"  style="position: relative; top: 20px; left: 45%;">
+                </nav>
+            </header>
+        </div>
+
+        <div class="side-bar">
+          <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>        
 
         
-
-        <footer>
+        <footer style="background-color: rgb(192, 210, 252)">
             
         </footer>
     </body>
