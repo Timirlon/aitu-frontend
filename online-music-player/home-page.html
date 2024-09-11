@@ -6,14 +6,35 @@
         </title>
 
         <style>
+            audio {
+                position: relative;
+                left: 20%;
+            }
+
+            a {
+                font-family: sans-serif;
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
+
             .side-bar {
                 background-color: white;
                 width: 200px;
                 display: inline-block;
                 border-radius: 10px;
-                position: relative;
-                top: 30px;
+                position: absolute;
+                top: 18.5%;
                 left: 21%;
+            }
+
+            .main-bar {
+                background-color: white;
+                width: 540px;
+                border-radius: 10px;
+                position: absolute;
+                top: 18.5%;
+                right: 20%;
             }
 
             .header {
@@ -23,12 +44,11 @@
 
             .search-bar {
                 font-size: 15px;
-                color: gray;
             }
 
         </style>
     </head>
-    <body style="margin: 0;background-image: url(https://images.pexels.com/photos/3695238/pexels-photo-3695238.jpeg?cs=srgb&dl=pexels-damir-mijailovic-1921088-3695238.jpg&fm=jpg); background-size: 100% 320%;">
+    <body style="margin: 0;background-image: url(https://images.pexels.com/photos/3695238/pexels-photo-3695238.jpeg?cs=srgb&dl=pexels-damir-mijailovic-1921088-3695238.jpg&fm=jpg); background-size: 150% 600%;">
         <div style="background-color: rgb(192, 210, 252); height: 70px; width: 100%;">
             <header>
                 <nav>
@@ -38,13 +58,45 @@
         </div>
 
         <div class="side-bar">
-          <ul>
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
-              <li><a href="#">Link 4</a></li>
+          <ul style="list-style-type: none; margin-top: 30px;">
+              <li><a href="#" style="color: rgb(79, 132, 255);">Home</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">History</a></li>
           </ul>
-        </div>        
+
+          <ul style="list-style-type: none; margin-top: 100px; margin-bottom: 68px;">
+            <li><a href="#">Music</a></li>
+              <li><a href="#">Podcasts</a></li>
+              <li><a href="#">Genres</a></li>
+              <li><a href="#">Artists</a></li>
+          </ul>
+        </div>      
+        
+        <div class="main-bar">
+            <p style="position: relative; left: 40px; font-family: sans-serif;">
+                Top 5 songs of the day
+            <p>
+
+            <audio controls>
+                <source src = "music-files/rick.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls>
+                <source src = "music-files/clint-eastwood.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls>
+                <source src = "music-files/orwells.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls>
+                <source src = "music-files/rick.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio controls>
+                <source src = "music-files/orwells.mp3" type="audio/mpeg">
+            </audio>
+        </div>
 
         
         <footer style="background-color: rgb(192, 210, 252)">
