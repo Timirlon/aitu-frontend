@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MuseBox
+        </title>
+
+        <style>
+            audio {
+                position: relative;
+                left: 20%;
+            }
+
+            a {
+                font-family: sans-serif;
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
+
+            .side-bar {
+                background-color: white;
+                width: 200px;
+                display: inline-block;
+                border-radius: 10px;
+                position: absolute;
+                top: 18.5%;
+                left: 21%;
+            }
+
+            .main-bar {
+                background-color: white;
+                width: 540px;
+                border-radius: 10px;
+                position: absolute;
+                top: 18.5%;
+                right: 20%;
+            }
+
+            .header {
+                top: 0;
+                position: fixed;
+            }
+
+            .search-bar {
+                font-size: 15px;
+            }
+
+            .playlist {
+              background-color: rgb(192, 210, 252);
+              width: 80%;
+              height: 50px;
+              position: relative;
+              left: 10%;
+              top: 10px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              cursor: pointer;
+            }
+
+            .music-pic {
+              background-color: rgb(192, 210, 252);
+              width: 10%;
+              height: 50px;
+              position: relative;
+              left: 10%;
+              top: 10px;
+            }
+
+        </style>
+    </head>
+    <body style="margin: 0;background-image: url(https://images.pexels.com/photos/3695238/pexels-photo-3695238.jpeg?cs=srgb&dl=pexels-damir-mijailovic-1921088-3695238.jpg&fm=jpg); background-size: 150% 600%;">
+        <div style="background-color: rgb(192, 210, 252); height: 70px; width: 100%;">
+            <header>
+                <nav>
+                    <input class = "search-bar" type="text"  style="position: relative; top: 20px; left: 45%;">
+                    <input type="submit" value="search" style="padding: 5px; position: relative; top: 20px; left: 45%;">
+                </nav>
+            </header>
+        </div>
+
+        <div class="side-bar">
+          <ul style="list-style-type: none; margin-top: 30px;">
+              <li><a href="main-page.html">Home</a></li>
+              <li><a href="#"  style="color: rgb(79, 132, 255);">Library</a></li>
+              <li><a href="#">History</a></li>
+          </ul>
+
+          <ul style="list-style-type: none; margin-top: 100px; margin-bottom: 68px;">
+            <li><a href="#">Music</a></li>
+              <li><a href="#">Podcasts</a></li>
+              <li><a href="#">Genres</a></li>
+              <li><a href="#">Artists</a></li>
+          </ul>
+        </div>      
+        
+        <div class="main-bar">
+          <div>
+            <button class = "playlist">
+              <h4 style="position: relative; right: 40%;">My playlist</h4>
+            </button>
+
+            <button class = "playlist" style="margin-bottom: 42%;">
+              <h4 style="position: relative; right: 40%;">Favorites</h4>
+            </button>
+          </div>  
+        </div>
+
+        
+        <footer style="background-color: rgb(192, 210, 252)">
+            
+        </footer>
+    </body>
+</html>
