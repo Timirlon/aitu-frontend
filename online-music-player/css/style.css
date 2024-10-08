@@ -1,3 +1,8 @@
+.list-group-item a {
+  text-decoration: none;
+  color: black;
+}
+
 audio {
   position: relative;
   left: 20%;
@@ -13,7 +18,7 @@ a {
 body {
   margin: 0;
   background-image: url(https://images.pexels.com/photos/3695238/pexels-photo-3695238.jpeg?cs=srgb&dl=pexels-damir-mijailovic-1921088-3695238.jpg&fm=jpg);
-  background-size: 100% 250%;
+  background-size: 100%;
 }
 
 .container {
@@ -21,6 +26,11 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 30px 0;
+}
+
+.col-lg-9 {
+  background-color: white;
+  border-radius: 10px;
 }
 
 footer {
@@ -33,14 +43,30 @@ header {
   position: relative;
   background-color: rgb(192, 210, 252);
   height: 70px;
-  width: 100%;
 }
 
-#input-button {
-  padding: 5px;
-  position: relative;
-  top: 20px;
-  left: 45%;
+.card {
+  max-width: 15em;
+  flex-direction: row;
+}
+
+.card-img {
+  max-width: 25%;
+  margin: auto;
+  padding: 0.5px;
+}
+
+#carousel-example {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+}
+
+#logo {
+  font-family: "Fascinate Inline", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
 }
 
 .main-bar {
@@ -64,6 +90,11 @@ header {
   position: relative;
   left: 40px;
   font-family: sans-serif;
+}
+
+.option-list a {
+  text-decoration: none;
+  color: black;
 }
 
 .option-list {
@@ -99,8 +130,15 @@ header {
 .search-bar {
   font-size: 15px;
   position: relative;
-  top: 20px;
-  left: 45%;
+  top: 5px;
+  left: 40%;
+}
+
+#search-button {
+  padding: 5px;
+  position: relative;
+  top: 5px;
+  left: 40%;
 }
 
 #selected-page {
@@ -114,4 +152,8 @@ header {
   border-radius: 10px;
   position: relative;
   top: 15px;
+}
+
+.side-bar a:hover {
+  color: rgb(165, 190, 248); 
 }
