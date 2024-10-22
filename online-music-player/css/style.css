@@ -33,9 +33,17 @@ body {
   border-radius: 10px;
 }
 
+.error {
+   color: red;
+}
+
 footer {
   background-color: rgb(192, 210, 252);
-  height: 50px;
+  height: 100px;
+}
+
+footer.dark-mode {
+  background-color: black;
 }
 
 header {
@@ -43,6 +51,10 @@ header {
   position: relative;
   background-color: rgb(192, 210, 252);
   height: 70px;
+}
+
+header.dark-mode {
+  background-color: black;
 }
 
 .card {
@@ -77,6 +89,11 @@ header {
   top: 15px;
 }
 
+.main-bar.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .music-pic {
   background-color: rgb(192, 210, 252);
   width: 10%;
@@ -97,6 +114,11 @@ header {
   color: black;
 }
 
+.side-bar.dark-mode .option-list a, 
+.option-list.dark-mode a {
+  color: white;
+}
+
 .option-list {
   list-style-type: none;
 }
@@ -108,6 +130,23 @@ header {
 
 #option-list-top {
   margin-top: 30px;
+}
+
+#pfp-button {
+  background-color: rgb(192, 210, 252);
+  width: 50px;
+  height: 50px;
+  padding: 0%;
+  border: none;
+  position: absolute;
+  right: 5%;
+  top: 10px;
+}
+
+#profile-picture {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .playlist {
@@ -130,15 +169,16 @@ header {
 .search-bar {
   font-size: 15px;
   position: relative;
-  top: 5px;
-  left: 40%;
+  top: 20px;
+  left: 45%;
+  height: 23px;
 }
 
 #search-button {
   padding: 5px;
   position: relative;
-  top: 5px;
-  left: 40%;
+  top: 20px;
+  left: 45%;
 }
 
 #selected-page {
@@ -154,6 +194,23 @@ header {
   top: 15px;
 }
 
+.side-bar.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .side-bar a:hover {
   color: rgb(165, 190, 248); 
 }
+
+.popup { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: white; border: 1px solid #ccc; }
+
+.overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); }
+
+.content { display: none; padding: 10px; }
+        
+.music { 
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(172, 172, 172);
+ }

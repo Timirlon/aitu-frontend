@@ -13,15 +13,15 @@
                 <input id="search-button" type="submit" value="search">
 
                 <button id="pfp-button">
-                    <img id="profile-picture" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" onclick="window.location.href='registration.html';">
-                </button>
+                  <img id="profile-picture" src="multimedia/images/selected-pfp.png" onclick="window.location.href='registration.html';">
+              </button>
             </nav>
         </header>
     
         <div class="container">
             <div class="side-bar">
                 <ul class="option-list" id="option-list-top">
-                    <li><a href="#" id="selected-page">Home</a></li>
+                    <li><a href="main-page.html">Home</a></li>
                     <li><a href="library.html">Library</a></li>
                     <li><a href="#" id="openPopup">Premium</a></li>
                 </ul>
@@ -33,29 +33,16 @@
                 </ul>
             </div>
             <div class="main-bar">
-                <p id="main-bar-top-text">
-                    Top 3 songs of the day
-                <p>
-                <div class="music">
-                    <audio controls>
-                        <source src="multimedia/music-files/rick.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-                <div class="content">Rick Astley - Never gonna give you up</div>
+              <h2>Registration</h2>
+              <form id="myForm">
+                  Name: <input type="text" id="name"><span id="nameError" class="error"></span><br><br>
+                  Email: <input type="email" id="email"><span id="emailError" class="error"></span><br><br>
+                  Password: <input type="password" id="password"><span id="passwordError" class="error"></span><br><br>
+                  Confirm Password: <input type="password" id="confirmPassword"><span id="confirmPasswordError" class="error"></span><br><br>
+                  <input type="submit" value="Submit">
+              </form>
 
-                <div class="music">
-                    <audio controls>
-                        <source src="multimedia/music-files/clint-eastwood.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-                <div class="content">Gorillaz - Clint Eastwood</div>
-
-                <div class="music">
-                    <audio controls>
-                        <source src="multimedia/music-files/orwells.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-                <div class="content">Orwells - Who needs you</div>
+              <script src="js/form-validation.js"></script>
             </div>
         </div>
 
@@ -64,6 +51,7 @@
             <h2>Subscribe</h2>
             <form>
                 Name: <input type="text"><br><br>
+                Surname: <input type="text"><br><br>
                 Email: <input type="email"><br><br>
                 <button type="button" id="closePopup">Close</button>
             </form>
@@ -71,8 +59,8 @@
 
         <script src="js/pop-up-script.js"></script>
         <script src="js/current-date-time.js"></script>
-        <script src="js/accordion.js"></script>
         <script src="js/change-color.js"></script>
+
 
         <footer>
             <p>Turgimbayev Temirlan</p>
