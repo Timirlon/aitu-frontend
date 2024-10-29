@@ -9,10 +9,8 @@
     <body>
         <header>
             <nav>
-                
-                <input class = "search-bar" type="text">
+                <input class="search-bar" type="text">
                 <input id="search-button" type="submit" value="search">
-
                 <button id="pfp-button" onclick="window.location.href='registration.html';">
                     <img id="profile-picture" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png">
                     <img id="dark-mode-pfp" src="multimedia/images/dark-mode-pfp.png">
@@ -35,10 +33,9 @@
                     <li><a href="#">Artists</a></li>
                 </ul>
             </div>
+
             <div class="main-bar">
-                <p id="main-bar-top-text">
-                    Top 3 songs of the day
-                <p>
+                <p id="main-bar-top-text">Top 3 songs of the day</p>
                 <div class="music">
                     <audio controls>
                         <source src="multimedia/music-files/rick.mp3" type="audio/mpeg">
@@ -59,6 +56,10 @@
                     </audio>
                 </div>
                 <div class="content">Orwells - Who needs you</div>
+
+                
+                <button id="show-time-button">Show Current Time</button>
+                <p id="time-display" style="opacity: 0;">Current time: </p>
             </div>
         </div>
 
@@ -72,16 +73,16 @@
             </form>
         </div>
 
-        <script src="js/pop-up-script.js"></script>
-        <script src="js/current-date-time.js"></script>
-        <script src="js/accordion.js"></script>
-        <script src="js/change-color.js"></script>
-        <script src="js/keyboard-handler.js"></script>
-
         <footer>
             <p>Turgimbayev Temirlan</p>
             <p id="datetime"></p>
             <button id="color-switcher">Dark Mode</button>
         </footer>
+
+        <script src="js/pop-up-script.js"></script>
+        <script src="js/current-date-time.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/change-color.js"></script>
+        <script src="js/time-button.js"></script>
     </body>
 </html>

@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
     applyDarkMode();
 
     toggleButton.addEventListener('click', () => {
+        // Animate elements briefly on click
+        [mainBar, sideBar, header, footer].forEach(element => {
+            element.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                element.style.transform = 'scale(1)';
+            }, 300); // Duration matches the CSS transition time
+        });
+
         // Toggle dark mode classes
         const isCurrentlyDarkMode = body.classList.toggle('dark-mode');
         mainBar.classList.toggle('dark-mode');
@@ -39,5 +47,4 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleButton.textContent = isCurrentlyDarkMode ? 'Light Mode' : 'Dark Mode';
     });
 });
-
 
