@@ -1,37 +1,48 @@
-// Authentication script - auth.js
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("myForm");
+  const greeting = document.getElementById("greeting");
+  const topText = document.getElementById("top-text");
+  const nameInput = document.getElementById("name");
+  const logoutButton = document.getElementById("logoutButton");
 
-// Function to login
-function login(username) {
-    localStorage.setItem("username", username);
-    displayGreeting();
-}
+  // Check if the user is already logged in
+  const savedUser = localStorage.getItem("username");
+  if (savedUser) {
+      form.style.display = "none";
+      topText.innerText = `Welcome back, ${savedUser}!`;
+      logoutButton.style.display = "inline-block"; // Show logout button
+  }
 
-// Function to logout
-function logout() {
-    localStorage.removeItem("username");
-    displayGreeting();
-}
+  // Handle form submission for registration
+  form.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-// Check if user is already logged in
-function displayGreeting() {
-    const greeting = document.getElementById("greeting");
-    const username = localStorage.getItem("username");
+      // Get form values
+      const username = nameInput.value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
 
-    if (username) {
-        greeting.innerText = `Welcome, ${username}!`;
-    } else {
-        greeting.innerText = "Please log in";
-    }
-}
+      // Validate form inputs
+      if (!username || !email || password !== confirmPassword) {
+          alert("Please ensure all fields are filled correctly.");
+          return;
+      }
 
-// Example Login Form Submission Handler
-document.getElementById("myForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    const username = document.getElementById("name").value;
-    if (username) {
-        login(username);
-    }
+      // Save user info in local storage
+      localStorage.setItem("username", username);
+
+      // Display welcome message, hide form, and show logout button
+      form.style.display = "none";
+      topText.innerText = `Welcome, ${username}!`;
+      logoutButton.style.display = "inline-block";
+  });
+
+  // Logout functionality
+  logoutButton.addEventListener("click", () => {
+      localStorage.removeItem("username");
+      location.reload(); // Reload page to reset form and logout button visibility
+  });
 });
 
-// Call displayGreeting() on page load
-displayGreeting();
+
