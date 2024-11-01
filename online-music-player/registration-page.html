@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MuseBox</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1 id="logo">MuseBox</h1>
+
+                <input class="search-bar" type="text">
+                <input id="search-button" type="submit" value="search">
+                <button id="pfp-button">
+                    <img id="profile-picture" style="opacity: 1;" src="multimedia/images/selected-pfp.png">
+                </button>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="side-bar">
+                <ul class="option-list" id="option-list-top">
+                    <li><a href="main-page.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="#" id="openPopup">Premium</a></li>
+                </ul>
+                <ul class="option-list" id="option-list-bottom">
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="artists-page.html">Artists</a></li>
+                </ul>
+            </div>
+
+            <div class="main-bar">
+                
+                <form id="myForm">
+                    <h2>Registration</h2>
+                    <p id="greeting"></p>
+
+                    Name: <input type="text" id="name"><span id="nameError" class="error"></span><br><br>
+                    Email: <input type="email" id="email"><span id="emailError" class="error"></span><br><br>
+                    Password: <input type="password" id="password"><span id="passwordError" class="error"></span><br><br>
+                    Confirm Password: <input type="password" id="confirmPassword"><span id="confirmPasswordError" class="error"></span><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+
+                <script src="js/form-validation.js"></script>
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay"></div>
+        <div id="popup" class="popup">
+            <h2>Subscribe</h2>
+            <form>
+                Name: <input type="text"><br><br>
+                Email: <input type="email"><br><br>
+                <button type="button" id="closePopup">Close</button>
+            </form>
+        </div>
+
+        <script src="js/pop-up-script.js"></script>
+        <script src="js/current-date-time.js"></script>
+        <script src="js/background-theme.js"></script>
+        <script src="js/registration-script.js"></script>
+
+        <footer>
+            <p>Turgimbayev Temirlan</p>
+            <p id="datetime"></p>
+            <button id="color-switcher">Toggle Dark Mode</button>
+        </footer>
+
+        
+        <script src="js/dynamic-greeting.js"></script>
+        <script src="js/keyboard-navigation.js"></script>
+    </body>
+</html>

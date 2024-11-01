@@ -109,6 +109,10 @@ header.dark-mode #dark-mode-pfp {
   opacity: 1;
 }
 
+header.dark-mode #logo {
+  color: white;
+}
+
 #hover-pfp {
   position: absolute;
   right: 5%;
@@ -124,6 +128,8 @@ header.dark-mode #dark-mode-pfp {
   font-weight: 400;
   font-style: normal;
   display: inline-block;
+  position: relative;
+  left: 5%;
 }
 
 .main-bar {
@@ -136,6 +142,10 @@ header.dark-mode #dark-mode-pfp {
 
 .main-bar.dark-mode {
   background-color: black;
+  color: white;
+}
+
+.main-bar.dark-mode .artist-list li a {
   color: white;
 }
 
@@ -228,18 +238,19 @@ header.dark-mode #dark-mode-pfp {
 }
 
 .search-bar {
+  display: inline-block;
   font-size: 15px;
   position: relative;
-  top: 20px;
-  left: 45%;
+  left: 40%;
   height: 23px;
 }
 
 #search-button {
+  display: inline-block;
   padding: 5px;
   position: relative;
-  top: 20px;
-  left: 45%;
+  left: 40%;
+  cursor: pointer;
 }
 
 #selected-page {

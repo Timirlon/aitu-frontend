@@ -5,15 +5,21 @@
             MuseBox
         </title>
         <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
     </head>
     <body>
         
         <header>
           <nav>
+            <h1 id="logo">MuseBox</h1>
+
             <input class = "search-bar" type="text">
             <input id="search-button" type="submit" value="search">
 
-            <button id="pfp-button" onclick="window.location.href='registration.html';">
+            <button id="pfp-button" onclick="window.location.href='registration-page.html';">
               <img id="profile-picture" src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png">
               <img id="dark-mode-pfp" src="multimedia/images/dark-mode-pfp.png">
               <img id="hover-pfp" src="multimedia/images/hover-pfp.png">
@@ -26,7 +32,7 @@
             <ul class="option-list" id="option-list-top">
                 <li><a href="main-page.html">Home</a></li>
                 <li><a href="#" id="selected-page">Library</a></li>
-                <li><a href="#" id="openPopup">Premium</a></li>
+                <li><a href="artists-page.html" id="openPopup">Premium</a></li>
             </ul>
   
             <ul class="option-list" id="option-list-bottom">
@@ -65,7 +71,7 @@
 
         <script src="js/pop-up-script.js"></script>
         <script src="js/current-date-time.js"></script>
-        <script src="js/change-color.js"></script>
+        <script src="js/background-theme.js"></script>
 
         <footer>
             <p>Turgimbayev Temirlan</p>

@@ -29,7 +29,7 @@
         <div class="container">
             <div class="side-bar">
                 <ul class="option-list" id="option-list-top">
-                    <li><a href="#" id="selected-page">Home</a></li>
+                    <li><a href="main-page.html">Home</a></li>
                     <li><a href="library.html">Library</a></li>
                     <li><a href="#" id="openPopup">Premium</a></li>
                 </ul>
@@ -37,36 +37,27 @@
                     <li><a href="#">Music</a></li>
                     <li><a href="#">Podcasts</a></li>
                     <li><a href="#">Genres</a></li>
-                    <li><a href="artists-page.html">Artists</a></li>
+                    <li><a href="#"  id="selected-page">Artists</a></li>
                 </ul>
             </div>
 
             <div class="main-bar">
-                <p id="main-bar-top-text">Top 3 songs of the day</p>
-                <div class="music">
-                    <audio controls>
-                        <source src="multimedia/music-files/rick.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-                <div class="content">Rick Astley - Never gonna give you up</div>
+                <p id="main-bar-top-text">Artists</p>
 
-                <div class="music">
-                    <audio controls>
-                        <source src="multimedia/music-files/clint-eastwood.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-                <div class="content">Gorillaz - Clint Eastwood</div>
-
-                <div class="music">
-                    <audio controls>
-                        <source src="multimedia/music-files/orwells.mp3" type="audio/mpeg">
-                    </audio>
-                </div>
-                <div class="content">Orwells - Who needs you</div>
-
-                
-                <button id="show-time-button">Show Current Time</button>
-                <p id="time-display" style="opacity: 0;">Current time: </p>
+                <ol class="artist-list">
+                  <li class="metal"><a href="#">Sabaton</a></li>
+                  <li class="rock"><a href="#">Blur</a></li>
+                  <li class="hip-hop"><a href="#">Gorillaz</a></li>
+                  <li class="hip-hop"><a href="#">2pac</a></li>
+                  <li class="rock"><a href="#">Linkin Park</a></li>
+                  <li class="pop"><a href="#">Taylor Swift</a></li>
+                  <li class="hip-hop"><a href="#">Kendrick Lamar</a></li>
+                  <li class="rock"><a href="#">Kenny Loggins</a></li>
+                  <li class="pop"><a href="#">Maroon</a></li>
+                  <li class="rock"><a href="#">The Beatles</a></li>
+                </ol>
+        
+                <button class="hip-hop-filter">Hip-hop</button>
             </div>
         </div>
 
@@ -91,5 +82,6 @@
         <script src="js/accordion.js"></script>
         <script src="js/background-theme.js"></script>
         <script src="js/time-button.js"></script>
+        <script src="js/music-filter.js"></script>
     </body>
 </html>
