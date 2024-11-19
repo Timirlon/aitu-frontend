@@ -1,4 +1,4 @@
-document.getElementById('myForm').addEventListener('submit', function (e) {
+document.getElementById('registration-form').addEventListener('submit', function (e) {
   e.preventDefault();
   let isValid = true;
   let name = document.getElementById('name').value;

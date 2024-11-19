@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const inputFields = document.querySelectorAll('#myForm input[type="text"], #myForm input[type="email"], #myForm input[type="password"]');
+  const inputFields = document.querySelectorAll('#registration-form input[type="text"], #registration-form input[type="email"], #registration-form input[type="password"]');
 
   inputFields.forEach((input, index) => {
       input.addEventListener('keydown', (event) => {

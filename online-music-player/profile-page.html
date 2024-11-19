@@ -49,9 +49,9 @@
                     <li><a href="#" id="openPopup">Premium</a></li>
                 </ul>
                 <ul class="option-list" id="option-list-bottom">
-                    <li><a href="#">Music</a></li>
+                    <li><a href="music-page.html">Music</a></li>
                     
-                    <li><a href="#">Genres</a></li>
+                    <li><a href="genres-page.html">Genres</a></li>
                     <li><a href="artists-page.html">Artists</a></li>
                 </ul>
 
@@ -65,22 +65,14 @@
 
                 <h4 id="greeting"></h4>                
 
-                <form id="registration-form">
-                    <h5 class="registration-form-top-text">Registration</h5>
+                <form id="profile-info">
+                    <h5>Profile info</h5>
+                    <p id="username">Username:</p>
 
-                    <input type="text" id="name" placeholder="Login"><span id="nameError" class="error"></span><br><br>
-                    <input type="email" id="email" placeholder="Email"><span id="emailError" class="error"></span><br><br>
-                    <input type="password" id="password" placeholder="Password"><span id="passwordError" class="error"></span><br><br>
-                    <input type="password" id="confirmPassword" placeholder="Confirm password"><span id="confirmPasswordError" class="error"></span><br><br>
-                    <input type="submit" value="Sign in" class="register btn btn-secondary"><br>
-
-                    <p class="registration-form-bottom-text">Have account already?</p>
-                    <a class="registration-form-bottom-text" href="login.html">Log here</a>
+                    <a href="main-page.html">
+                    <button id="logoutButton">Logout</button>
+                    </a>
                 </form>
-
-                
-
-            
             </div>
         </div>
 
@@ -90,7 +82,9 @@
             <form>
                 Name: <input type="text"><br><br>
                 Email: <input type="email"><br><br>
-                <button type="button" id="closePopup">Close</button>
+                <a href="registration-page.html">
+                    <button type="button" id="closePopup">Close</button>
+                </a>
             </form>
         </div>
 
@@ -106,8 +100,22 @@
         <script src="js/pop-up-script.js"></script>
         <script src="js/current-date-time.js"></script>
         <script src="js/background-theme.js"></script>
-        <script src="js/registration-script.js"></script>
         <script src="js/dynamic-greeting.js"></script>
         <script src="js/keyboard-navigation.js"></script>
+        <script src="js/logout_script.js"></script>
+
+        <script>
+            // Get the logged-in username from localStorage
+            const username = localStorage.getItem('loggedInUser');
+            
+            if (username) {
+              // Display the username in the profile page
+              document.getElementById('username').innerText = `Username: ${username}`;
+            } else {
+              // If no username is found, redirect to the login page
+              window.location.href = 'login.html';
+            }
+          </script>
+          
     </body>
 </html>
